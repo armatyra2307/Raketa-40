@@ -15,7 +15,7 @@ a{
 }
 
 p{
-    color: black;
+    color: white;
     font-size: 18px;
     font-weight: 600;
 }
@@ -149,12 +149,9 @@ header{
         color: gray;
         
     }
-    
-    .hamb{
-        display: none;
-        
-    }
 
+    .hamb{
+        display: none;    }
 }
 
 .container-header{
@@ -232,9 +229,9 @@ header{
 }
 .oshkole{
     color: white;
-    font-size: 28px;
-    font-weight: 600;
-    padding: 10px 50px 20px;
+    font-size: 32px;
+    font-weight: 800;
+    padding: 40px 50px 20px;
 }
 .oshkole-p{
     color: white;
@@ -248,13 +245,92 @@ header{
     padding: 10px 70px 10px;
     color: white;
 }
-.school-img{
-    
-}
 .kot{
     width: 300px;
     height: 300px;
     position: absolute;
+    top: 350px;
     right: 50px;
-    bottom: -250px;
+}
+.parent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 50px;
+}
+
+.div1{
+    width: 100%;
+    max-width: 100%;
+    border-radius: 25px;
+}
+
+.img-tablo{
+    width: 100%;
+    height: 350px; /* фиксированная высота для всех изображений */
+    object-fit: cover; /* заполняет контейнер без искажения пропорций */
+    border-radius: 25px;
+    display: block;
+    
+}
+.oshkole-p2{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+.vidos{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 80%; */
+    padding: 10px 50px 10px;
+}
+.train {
+    /* background-color: white; */
+display: flex;
+align-items: center;
+justify-content: center;
+/* height: 645px; */
+width: 100%;
+}
+    .video {
+        /* width: 700px;
+        height: 400px;
+        object-fit: cover; */
+        margin:30px ;
+        object-fit: cover;
+        width: 100%;
+        max-width: 1200px;
+        height: 517px;
+    }
+    
+    .content-btn {
+position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 100%; */
+    
+    }
+    
+        .btn {
+        
+        font-size: 14px;
+        font-weight: 500;
+        transform: skew(-20deg);
+        background-color: #00b67a;
+        color: #fff;
+        width: 193px;
+        height: 33px;
+        border: none;
+        }
+.train-p2{
+    color: white;
+    font-size: 32px;
+    font-weight: 800;
+    padding: 40px 50px 20px;
 }

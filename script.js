@@ -34,3 +34,45 @@ function updateSlider() {
 }
 // Инициализация слайдера
 updateSlider();
+
+const video = document.querySelector('.video');
+            const playButton = document.querySelector('.btn');
+            
+            if (video && playButton) {
+                playButton.addEventListener('click', function() {
+                    if (video.paused) {
+                        video.play();
+                        playButton.textContent = 'Пауза';
+                    } else {
+                        video.pause();
+                        playButton.textContent = 'Смотреть видео';
+                    }
+                });
+
+                video.addEventListener('ended', function() {
+                    playButton.textContent = 'Смотреть видео';
+                });
+
+                // Keyboard controls
+                document.addEventListener('keydown', function(e) {
+                    if (e.code === 'ArrowRight') {
+                        video.currentTime += 10;
+                    } else if (e.code === 'ArrowLeft') {
+                        video.currentTime -= 10;
+                    } else if (e.code === 'Space') {
+                        if (video.paused) {
+                            video.play();
+                            playButton.textContent = 'Пауза';
+                        } else {
+                            video.pause();
+                            playButton.textContent = 'Смотреть видео';
+                        }
+                    }
+                });
+
+                // Click on video to skip
+                video.addEventListener('click', function() {
+                    video.currentTime += 10;
+                });
+            }
+
