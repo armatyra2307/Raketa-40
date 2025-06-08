@@ -14,11 +14,6 @@ a{
     text-decoration: none;
 }
 
-p{
-    color: white;
-    font-size: 18px;
-    font-weight: 600;
-}
 h2{
     font-size: 27px;
     font-weight: 600;
@@ -26,6 +21,11 @@ h2{
 }
 header{
     background-color: black;
+}
+.nomer{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 /* Header */
@@ -35,6 +35,8 @@ header{
     top: 0;
     width: 100%;
 }
+
+
 
 /* Nav menu */
 .menu-item{
@@ -60,8 +62,6 @@ header{
     transition: max-height .5s ease-out;
     width: 100%;
     height: 100%;
-    position: fixed;
-    background-color: black;
     overflow: hidden;
 }
 
@@ -146,12 +146,12 @@ header{
 
     .menu-item a:hover{
         background-color: transparent;
-        color: gray;
-        
+        color: gray;   
     }
 
     .hamb{
-        display: none;    }
+        display: none;    
+    }
 }
 
 .container-header{
@@ -169,6 +169,10 @@ header{
     flex-direction: row;
     align-items: center;
 }
+.zapis{
+    display: flex;
+    flex-direction: column;
+}
 .media{
     display: flex;
     flex-direction: row;
@@ -182,48 +186,41 @@ header{
 //slider
 .page-title {
     text-align: center;
-  }
-  
-  .slider-container {
+}
+.slider-container {
     position: relative;
-    width: 600px;
-    height: 400px;
+    width: 100% ;
     margin: 0 auto;
     overflow: hidden;
-  }
-  
-  .slider {
+}
+.slider {
     display: flex;
     transition: transform 0.5s ease-in-out;
-  }
-  
-  .slider img {
+}
+.slider img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  
-  .prev-button,
-  .next-button {
+}
+
+.prev-button,
+.next-button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
+    width: 150px;
+    height: 150px;
     background-color: transparent;
     border: none;
     font-size: 24px;
     color: white;
-  }
-  
-  .prev-button {
+}
+.prev-button {
     left: 10px;
-  }
-  
-  .next-button {
+}
+.next-button {
     right: 10px;
-  }
-
+}
 .school{
     background-color: black;
 }
@@ -249,7 +246,7 @@ header{
     width: 300px;
     height: 300px;
     position: absolute;
-    top: 350px;
+    bottom:-150px;
     right: 50px;
 }
 .parent{
@@ -296,41 +293,85 @@ justify-content: center;
 /* height: 645px; */
 width: 100%;
 }
-    .video {
-        /* width: 700px;
-        height: 400px;
-        object-fit: cover; */
-        margin:30px ;
-        object-fit: cover;
-        width: 100%;
-        max-width: 1200px;
-        height: 517px;
-    }
+.video {
+    /* width: 700px;
+    height: 400px;
+    object-fit: cover; */
+    margin:30px ;
+    object-fit: cover;
+    width: 100%;
+    max-width: 1200px;
+    height: 517px;
+}
     
-    .content-btn {
+.content-btn {
 position: absolute;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* width: 100%; */
+z-index: 2;
+display: flex;
+flex-direction: column;
+align-items: center;
+/* width: 100%; */
+
+}
     
-    }
-    
-        .btn {
-        
-        font-size: 14px;
-        font-weight: 500;
-        transform: skew(-20deg);
-        background-color: #00b67a;
-        color: #fff;
-        width: 193px;
-        height: 33px;
-        border: none;
-        }
+.btn {
+
+font-size: 14px;
+font-weight: 500;
+transform: skew(-20deg);
+background-color: #00b67a;
+color: #fff;
+width: 193px;
+height: 33px;
+border: none;
+}
 .train-p2{
     color: white;
     font-size: 32px;
     font-weight: 800;
     padding: 40px 50px 20px;
+}
+@media (min-width: 768px) {
+    .nav-item{
+        max-height: none;
+        top: 0;
+        position: relative;
+        background-color: transparent;
+    }
+    .menu-item li{
+        float: left;
+    }
+
+    .menu-item a:hover{
+        background-color: transparent;
+        color: gray;    
+    }
+    .hamb{
+        display: none;  
+    }
+}
+@media (max-width:768px){
+    h2{
+        font-size: 24px;
+    }
+    .nomer{
+        font-size: 12px;
+        font-weight:600;
+    }
+    .container-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .media{
+        gap:20px
+    }
+    .parent{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width:400px){
+
 }
