@@ -301,7 +301,7 @@ width: 100%;
     object-fit: cover;
     width: 100%;
     max-width: 1200px;
-    height: 517px;
+    height: 450px;
 }
     
 .content-btn {
@@ -355,7 +355,7 @@ border: none;
         font-size: 24px;
     }
     .nomer{
-        font-size: 12px;
+        font-size: 14px;
         font-weight:600;
     }
     .container-header{
